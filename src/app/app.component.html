@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table table-primary table-striped border border-dark" border="2px">
+        <tr class="bg-info">
+          <th>Name</th>
+          <th>Course</th>
+          <th>Marks</th>
+          <th>Percentage</th>
+          <th>DOB</th>
+          <th>Gender</th>
+        </tr>
+<tr *ngFor="let item of Student">
+ <td>{{item.Name}}</td>
+          <td>{{item.Course}}</td>
+          <td>{{item.Marks}}</td>
+          <td>{{item.Marks | percentage:TotalMarks:2}}</td>
+          <td>{{item.DOB}}</td>
+          <td>{{item.Gender}}</td>
+</tr>
+      </table>
+    </div>
+  </div>
+</div>
